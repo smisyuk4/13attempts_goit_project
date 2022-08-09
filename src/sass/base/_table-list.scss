@@ -1,0 +1,9 @@
+.table-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--dst-between);
+}
+
+.table-item {
+    width: calc((100% - var(--dst-between) * (var(--count-cards) - 1)) / var(--count-cards));
+}
