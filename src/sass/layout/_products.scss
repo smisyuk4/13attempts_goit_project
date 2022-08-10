@@ -45,7 +45,7 @@
   }
 }
 
-.product__name:after {
+.product__name::after {
   content: “”;
   position: absolute;
   width: 10px;
@@ -58,7 +58,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .product__name:after {
+  .product__name::after {
     content: “”;
     position: absolute;
     width: 10px;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .product__name:after {
+  .product__name::after {
     content: “”;
     position: absolute;
     width: 10px;
