@@ -1,0 +1,108 @@
+.gallery {
+    padding: 30px 0;
+    background-image: linear-gradient(to bottom,
+            rgba(255, 245, 246, 1) 50%,
+            rgba(255, 255, 255, 1) 50%);
+
+    @media screen and (min-width: 1200px) {
+        padding: 60px 0;
+    }
+
+    &__container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0
+    }
+}
+
+.gallery__column {
+    margin-right: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:nth-child(4) {
+        margin-top: 27px;
+    }
+
+    &:nth-child(5) {
+        margin-top: 14px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 6px;
+
+        &:nth-child(4) {
+            margin-top: 60px;
+        }
+
+        &:nth-child(5) {
+            margin-top: 35px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 8px;
+
+        &:nth-child(4) {
+            margin-top: 80px;
+        }
+
+        &:nth-child(5) {
+            margin-top: 50px;
+        }
+    }
+}
+
+.gallery__item {
+    max-width: 44px;
+    max-height: 44px;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 3px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        border-radius: 50%;
+        transform: rotate(20deg);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        max-width: 105px;
+        max-height: 105px;
+        margin-bottom: 6px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 138px;
+        max-height: 138px;
+        margin-bottom: 8px;
+    }
+}
+
+.gallery__item--big {
+    max-width: 90px;
+    max-height: 90px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        max-width: 215px;
+        max-height: 215px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 283px;
+        max-height: 283px;
+    }
+}
