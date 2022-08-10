@@ -11,3 +11,5 @@ import './js/jquery.spincrement.min';
 import './js/arrow-to-top';
 
 import './js/about__modal';
+
+import './js/swiper';
