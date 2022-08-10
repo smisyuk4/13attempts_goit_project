@@ -6,4 +6,6 @@ import './js/menu-btn';
 
 import './js/modal';
 
-import './js/jquery.spincrement.min'
+import './js/jquery.spincrement.min';
+
+import './js/arrow-to-top';
