@@ -15,3 +15,5 @@ import './js/about__modal';
 import './js/up';
 
 import './js/swiper';
+
+import './js/contacts_modal';
