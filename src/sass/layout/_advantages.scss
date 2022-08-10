@@ -68,11 +68,7 @@
     @media screen and (min-width: 1200px) {
       max-width: 288px;
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
+  }  
 
   &__icon {
     display: block;
