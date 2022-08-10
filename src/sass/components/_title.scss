@@ -1,0 +1,57 @@
+.title__label {
+    font-family: 'Titan One';
+    text-transform: uppercase;
+    color: #ffa5ba;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 60px;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 12px;
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.title {
+    font-family: 'Titan One';
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 15px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+    }
+}
