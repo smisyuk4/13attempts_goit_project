@@ -12,4 +12,6 @@ import './js/arrow-to-top';
 
 import './js/about__modal';
 
+import './js/up';
+
 import './js/swiper';
