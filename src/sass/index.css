@@ -923,6 +923,7 @@
     line-height: 34px;
   }
 }
+
 .product__name::after {
   content: "";
   position: absolute;
@@ -984,6 +985,7 @@
     transform: translateY(-270px);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .product__name-icecream::before {
     content: url("../images/products/home-pic1-368.png");
@@ -994,6 +996,7 @@
     transform: translateY(-400px);
   }
 }
+
 .product__name-icecoffee::before {
   content: url("../images/products/home-pic2-280.png");
   width: 280px;
@@ -1013,6 +1016,7 @@
     transform: translateY(-270px);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .product__name-icecoffee::before {
     content: url("../images/products/home-pic2-368.png");
@@ -1042,6 +1046,7 @@
     transform: translateY(-270px);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .product__name-milkshake::before {
     content: url("../images/products/home-pic3-368.png");
@@ -1052,6 +1057,7 @@
     transform: translateY(-400px);
   }
 }
+
 .product__desc {
   font-family: "DM Sans";
   font-style: normal;
@@ -1179,6 +1185,7 @@
     --count-cards: 3;
   }
 }
+
 .table-item {
   display: flex;
   justify-content: center;
@@ -1190,6 +1197,7 @@
     padding-bottom: 120px;
   }
 }
+
 .about {
   padding-top: 60px;
   background-color: var(--first-bg-color);
@@ -1493,6 +1501,7 @@
     max-width: 288px;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .page-advantages__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1586,6 +1595,7 @@
     padding: 60px 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .gallery {
     padding-left: 20px;
@@ -2017,6 +2027,7 @@ hr {
     line-height: 66px;
   }
 }
+
 .page-footer {
   background-color: #fff5f6;
   padding-top: 40px;
@@ -2281,6 +2292,154 @@ hr {
 #up.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Reviews */
+.swiper-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+  background: #fff;
+  font-family: "DM Sans";
+}
+
+.person {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  border-radius: 50%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .person {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding: 30px 50px 30px 50px;
+  margin-bottom: 36px;
+  background: #fafafa;
+}
+@media screen and (min-width: 768px) {
+  .feedback-box {
+    width: 720px;
+    padding: 30px 16px 36px 16px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback-box {
+    width: 968px;
+    padding: 32px 72px;
+    margin-bottom: 36px;
+  }
+}
+
+.feedback-box::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  display: block;
+  border-radius: 50%;
+  background-color: #c7133e;
+  transform: translateY(48px);
+  left: 50%;
+  box-shadow: -10px 0 #c7133e, 10px 0 #c7133e;
+}
+@media screen and (min-width: 768px) {
+  .feedback-box::after {
+    transform: translateY(48px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback-box::after {
+    transform: translateY(48px);
+  }
+}
+
+.blockquote {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+  padding-left: 12px;
+  padding-right: 12px;
+  z-index: 10;
+  width: 157px;
+  color: #000000;
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+}
+@media screen and (min-width: 768px) {
+  .blockquote {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.1em;
+    width: 608px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blockquote {
+    font-size: 16px;
+    line-height: 1.86;
+    width: 822px;
+  }
+}
+
+.feedback-box::before {
+  position: absolute;
+  content: "❜❜";
+  left: 30px;
+  top: -10px;
+  font-size: 120px;
+  color: #e1e1e1;
+  z-index: 5;
+  letter-spacing: 0.0001em;
+}
+@media screen and (min-width: 768px) {
+  .feedback-box::before {
+    left: 20px;
+    top: -10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback-box::before {
+    left: 35px;
+    top: -10px;
+  }
+}
+
+.name {
+  position: relative;
+  margin-bottom: 164px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .name {
+    font-size: 20px;
+  }
 }
 
 .container {
