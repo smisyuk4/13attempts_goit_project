@@ -203,13 +203,13 @@
   z-index: 2;
 }
 
-.about__list.about__is-hidden {
+.about__list.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.about__backdrop.about__is-hidden {
+.about__backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
