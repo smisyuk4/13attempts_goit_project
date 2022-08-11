@@ -94,7 +94,7 @@
     color: #907e82;
     &:hover,
     &:focus {
-      color: #d41443;
+      color: var(--brand-color);
     }
   }
   &_contacts {
@@ -150,7 +150,7 @@ hr {
 }
 .locations_pointer {
   margin-left: 11px;
-  fill: #ffffff;
+  fill: var(--third-color);
 }
 .franchise_btn {
   height: 44px;
@@ -161,8 +161,8 @@ hr {
   font-size: 16px;
   line-height: 1.31px;
 
-  color: #d41443;
-  background: #fff;
+  color: var(--brand-color);
+  background: var(--third-color);
   border-radius: 22px;
   cursor: pointer;
   &:hover,
@@ -172,7 +172,7 @@ hr {
 }
 .franchise_pointer {
   margin-left: 13px;
-  fill: #d41443;
+  fill: var(--brand-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -281,6 +281,7 @@ hr {
   visibility: visible;
   pointer-events: initial;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
 }
 
 .beckdrop.is-hidden {
@@ -295,15 +296,12 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  //   min-height: 581px;
   padding: 40px;
-  background: #fff5f6;
+  background: var(--first-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   overflow: hidden;
-
-  // border-radius: 4px;
 }
 
 .contacts_modal-drop {
@@ -319,16 +317,10 @@ hr {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  //   transform: translate(-8px, 8px);
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--third-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms var(--timing-function);
-
-  &:focus,
-  &:hover {
-    fill: #188ce8;
-  }
 }
 
 .contacts_modal-close {
@@ -349,11 +341,16 @@ hr {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
+
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+  .modal-citi {
+    font-size: 58px;
+    line-height: 66px;
+  }
 }

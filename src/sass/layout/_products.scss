@@ -45,8 +45,8 @@
   }
 }
 
-.product__name:after {
-  content: “”;
+.product__name::after {
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -58,8 +58,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .product__name:after {
-    content: “”;
+  .product__name::after {
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
@@ -72,8 +72,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .product__name:after {
-    content: “”;
+  .product__name::after {
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
@@ -89,90 +89,99 @@
   position: relative;
 }
 
-.product-icecream::before {
+
+
+.product__name-icecream::before {
   content: url('../images/products/home-pic1-280.png');
   width: 280px;
   height: 280px;
   display: block;
   position: absolute;
+  transform: translateY(-310px);
 }
 
 @media screen and (min-width: 768px) {
-  .product-icecream::before {
+  .product__name-icecream::before {
     content: url('../images/products/home-pic1-224.png');
     width: 224px;
     height: 224px;
     display: block;
     position: absolute;
+    transform: translateY(-270px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .product-icecream::before {
+  .product__name-icecream::before {
     content: url('../images/products/home-pic1-368.png');
     width: 224px;
     height: 224px;
     display: block;
     position: absolute;
-    transform: translateY(-100px);
+    transform: translateY(-400px);
+   
   }
 }
 
-.product-icecoffee::before {
+.product__name-icecoffee::before {
   content: url('../images/products/home-pic2-280.png');
   width: 280px;
   height: 280px;
   display: block;
   position: absolute;
+  transform: translateY(-310px);
 }
 
 @media screen and (min-width: 768px) {
-  .product-icecoffee::before {
+  .product__name-icecoffee::before {
     content: url('../images/products/home-pic2-224.png');
     width: 224px;
     height: 224px;
     display: block;
     position: absolute;
+    transform: translateY(-270px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .product-icecoffee::before {
+  .product__name-icecoffee::before {
     content: url('../images/products/home-pic2-368.png');
     width: 368px;
     height: 394px;
     display: block;
     position: absolute;
-    transform: translateY(-100px);
+    transform: translateY(-400px);
   }
 }
 
-.product-milkshake::before {
+.product__name-milkshake::before {
   content: url('../images/products/home-pic3-280.png');
   width: 280px;
   height: 280px;
   display: block;
   position: absolute;
+  transform: translateY(-310px);
 }
 
 @media screen and (min-width: 768px) {
-  .product-milkshake::before {
+  .product__name-milkshake::before {
     content: url('../images/products/home-pic3-224.png');
     width: 224px;
     height: 224px;
     display: block;
     position: absolute;
+    transform: translateY(-270px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .product-milkshake::before {
+  .product__name-milkshake::before {
     content: url('../images/products/home-pic3-368.png');
     width: 224px;
     height: 224px;
     display: block;
     position: absolute;
-    transform: translateY(-100px);
+    transform: translateY(-400px);
   }
 }
 
@@ -315,8 +324,12 @@
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .product__list {
-//     margin-top: 80px;
-//   }
-// }
+.table-item {
+  display: flex;
+  justify-content: center;
+  width: calc((100% - var(--dst-between) * (var(--count-cards) - 1)) / var(--count-cards));
+}
+@media screen and (min-width:1200px){
+.header-title{
+  padding-bottom: 120px;
+}}
