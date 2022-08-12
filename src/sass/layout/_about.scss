@@ -1,6 +1,7 @@
 .about {
   padding-top: 60px;
   background-color: var(--first-bg-color);
+  position: relative;
 
   &__text {
     display: flex;
@@ -12,6 +13,7 @@
 
   &__title {
     text-align: center;
+    margin-top: 0px;
   }
 
   &__img {
@@ -109,7 +111,7 @@
       position: absolute;
       bottom: 0px;
 
-      z-index: -1;
+      z-index: 0;
     }
   }
 
@@ -159,15 +161,16 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    padding-top: 5px;
   }
 
   &__modal-btn:hover {
     fill: blue;
   }
 
-  &__modal-img {
+  &_modal-img {
     display: block;
-    max-width: 90%;
+    width: 90%;
     height: auto;
     margin: auto;
     margin-top: 40px;
@@ -181,6 +184,7 @@
 
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -227,6 +231,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    height: 500px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 450px;
@@ -237,4 +245,7 @@
     width: 528px;
     height: 581px;
   }
+}
+.about__text > .aboud__title {
+  margin-top: 0px;
 }
