@@ -1,9 +1,9 @@
 /* Reviews */
 
 .swiper-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  // display: flex;
+  // text-align: center;
+  // justify-content: center;
   max-width: 100%;
   background:#fff;
   font-family: "DM Sans";
@@ -29,14 +29,14 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
+  min-width: 280px;
   padding: 30px 50px 30px 50px;
   margin-bottom: 36px;
   background: #fafafa;
 
 
 @media screen and (min-width: 768px) {
-    width: 720px;
+    min-width: 720px;
     padding: 30px 16px 36px 16px;
     margin-bottom: 24px;
   }
@@ -82,7 +82,7 @@
   padding-left: 12px;
   padding-right: 12px;
    z-index: 10;
-  width: 157px;
+  min-width: 157px;
   color: #000000;
   background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
  
@@ -125,10 +125,11 @@
 
 .name {
   position: relative;
-  margin-bottom: 164px;
+  // margin-bottom: 164px;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.04em;
+  text-align: center;
 
 @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -141,44 +142,56 @@
 
 .swiper-wrapper {
   // max-height: 590px;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
 }
 
 /* Slider styles */
 
 /* Dots */
-.swiper-wrapper.slick-dots {
-  align-items: center;
+.slick-dots {
+  display: flex;
   justify-content: center;
   position: relative;
-  background-color: transparent;
+  list-style-type: none;
+  li {
+    margin: 0 0.25rem;
   }
-
-.swiper-wrapper .slick-dots li{
-  list-style: none;
+  button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 100%;
+    text-indent: -9999px;
+  }
+  li.slick-active button {
+    background-color: #D31342;
+  }
 }
 
-.slick-dots li button::before {
+// #slick-slide-control00::before {
+//   content: url(../images/icons/home.svg);
+//   position: relative;
+//   // display: flex;
+//   // top:5px;
+// }
 
-}
 
-.slick-dots li button#slick-slide-control00::before {
-  font-size: 0;
-  content: url(../images/icons/home.svg);
-  position: relative;
-  display: flex;
-  top:5px;
-}
+// .slick-dots li button#slick-slide-control01::before,
+// .slick-dots li button#slick-slide-control02::before {
+//   font-size: 12px;
+//   color: #D9D9D9;
+// }
 
-.slick-dots li button#slick-slide-control01::before,
-.slick-dots li button#slick-slide-control02::before {
-  font-size: 12px;
-  color: #D9D9D9;
-}
-
-.slick-dots li.slick-active button#slick-slide-control01::before, 
-.slick-dots li.slick-active button#slick-slide-control02::before {
-  color: #c7133e;
-}
+// #slick-slide-control01::before, 
+// #slick-slide-control02::before {
+//   color: #c7133e;
+// }
 
