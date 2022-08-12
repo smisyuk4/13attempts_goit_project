@@ -1,6 +1,20 @@
 .about {
   padding-top: 60px;
   background-color: var(--first-bg-color);
+  align-content: center;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/about/milk1x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 77%;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk2x.png');
+    }
+  }
 
   &__text {
     display: flex;
@@ -39,7 +53,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.75;
-      width: 463px;
+      width: 453px;
       padding-bottom: 32px;
       z-index: 1;
     }
@@ -61,7 +75,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.75;
-      width: 463px;
+      width: 453px;
     }
   }
 
@@ -90,26 +104,6 @@
   &__item {
     @media screen and (min-width: 1200px) {
       padding-top: -120px;
-    }
-  }
-
-  &__item-foto {
-    position: absolute;
-    bottom: 150px;
-    animation-duration: 2000ms;
-    z-index: 0;
-    animation: animate__zoomInDown;
-    display: inline-block;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-      position: absolute;
-      bottom: 0px;
-
-      z-index: -1;
     }
   }
 
@@ -150,7 +144,7 @@
     width: 30px;
     height: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin-top: 8px;
     margin-right: 8px;
@@ -187,6 +181,19 @@
   // модольне вікно
 }
 
+.about__modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__list-info {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .about__backdrop {
   position: fixed;
   top: 0%;
@@ -203,11 +210,11 @@
   z-index: 2;
 }
 
-.about__list.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .about__list.is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
 
 .about__backdrop.is-hidden {
   opacity: 0;
@@ -215,10 +222,13 @@
   pointer-events: none;
 }
 
+.about__backdrop.is-hidden .about_modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
 .about_modal {
   position: absolute;
-  width: 450px;
-  height: 609px;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -228,6 +238,10 @@
   border-radius: 4px;
   z-index: 2;
 
+  @media screen and (min-width: 320px) {
+    width: 95%;
+    height: 50%;
+  }
   @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
@@ -237,4 +251,19 @@
     width: 528px;
     height: 581px;
   }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about--color {
+    background-image: url(../images/about/milk_mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: 0 75px;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
