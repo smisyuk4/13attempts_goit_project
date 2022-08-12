@@ -4,7 +4,7 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    speed: 600,
+    speed: 1200,
     arrows: false,
 
   });
